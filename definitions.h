@@ -17,20 +17,20 @@ typedef string Enpassants[];
 typedef string Moves[];
 
 typedef struct Move {
-	int from;
-	int to;
-	int promotion;
+  int from;
+  int to;
+  int promotion;
 };
 
 typedef struct Position {
-	Turn turn;
-	Board board;
-	Score score;
-	Castling castling;
-	Enpassants enpassants;
-	Moves* genMoves();
-	Position move(Move move);
-	Score value(Move move);
+  Turn turn;
+  Board board;
+  Score score;
+  Castling castling;
+  Enpassants enpassants;
+  Moves* genMoves();
+  Position move(Move move);
+  Score value(Move move);
 };
 
 #endif
