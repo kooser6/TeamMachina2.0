@@ -34,4 +34,15 @@ typedef struct Position {
   Position load(string fen);
 };
 
+vector<string> explode(std::string const& text, char seperator)
+{
+  vector<string> result;
+  istringstream iss(text);
+  for (string token; getline(iss, token, seperator); )
+  {
+    result.push_back(move(token));
+  };
+  return result;
+};
+
 #endif
