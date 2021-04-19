@@ -37,7 +37,7 @@ typedef struct Position {
   Position load(string fen);
 };
 
-vector<string> explode(std::string const& text, char seperator)
+vector<string> explode(string const& text, char seperator)
 {
   vector<string> result;
   istringstream iss(text);
