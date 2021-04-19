@@ -31,6 +31,7 @@ typedef struct Position {
   Moves* genMoves();
   Position move(Move move);
   Score value(Move move);
+  Position load(string fen);
 };
 
 #endif
